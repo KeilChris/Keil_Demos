@@ -1,0 +1,30 @@
+This project demonstrates a simple blinky application using CMSIS-RTOS Keil
+RTX5 and board support API and runs on the Arm Cortex-M4 of an MCB1800 with
+100 MHz. The application is CMSIS compliant.
+
+Example functionality:
+ - Clock Settings:
+   - XTAL    =  12 MHz
+   - CPU     = 100 MHz
+
+The simple example simulates a step-motor driver. Four LEDs are blinking
+simulating the activation of the four output driver stages:
+
+- phase A
+- phase B
+- phase C
+- phase D
+
+This example simulates Half step driver mode and CW rotation direction.
+
+The target "ULINKplus" is configured for serial wire trace using the
+on-board 10-pin Cortex debug connector with a ULINKplus debug adapter running
+at 10 MHz. For power measurement, use the 2.55 Ohm shunt (100 mA).
+
+The project is setup to show the following features of µVision debugger:
+- Event Recorder
+- Event Statistics
+- System Analyzer with
+  - Power measurement
+  - RTOS threads
+  - Exceptions

@@ -1,0 +1,21 @@
+This project demonstrates a simple blinky application with the usage of the
+ADC. It uses CMSIS-RTOS Keil RTX5 and board support API and runs on the Arm
+Cortex-M4 of an MCB1800 with 100 MHz. The application is CMSIS compliant.
+
+It demonstrates how you can annotate code with the new Event Recorder start
+and stop functions to measure time spent and power consumed for certain areas
+of the source code.
+
+The target "ULINKplus" is configured for serial wire trace using the
+on-board 10-pin Cortex debug connector with a ULINKplus debug adapter running
+at 10 MHz. For power measurement, use the 2.55 Ohm shunt (100 mA).
+
+Using the ULINKplus I/O, you can send the device to sleep by connecting IO0 on
+the ULINKplus to pin P4_0 on the MCB1800 demo board. Use the toolbox in the
+debug session to control the I/O or by pressing the “P4_0” button on the
+MCB1800 board.
+
+The project is setup to show the following features of µVision debugger:
+- Event Recorder
+- Event Statistics
+- System Analyzer with power measurement

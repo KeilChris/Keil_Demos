@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>KeilChris</vendor>
+  <name>Keil_Demos</name>
+  <description>Working demos example pack</description>
+  <url>http://www.keil.com/pack/</url>
+  <supportContact>christopher.seidl@arm.com</supportContact>
+
+  <repository type="git">https://github.com/KeilChris/Keil_Demos.git</repository>
+  
+  <releases>
+    <release version="1.0.0" date="2018-06-25">
+      Initial Version
+    </release>
+  </releases>
+
+  <keywords>
+    <!-- keywords for indexing -->
+    <keyword>Keil</keyword>
+    <keyword>Examples</keyword>
+    <keyword>embedded world</keyword>
+  </keywords>
+
+  <examples>
+    <example name="RTX5 Blinky" doc="Abstract.txt" folder="NXP/MCB1800/Blinky">
+      <description>Keil RTX5 based five phase Blinky example</description>
+      <board name="MCB1800" vendor="Keil"/>
+      <project>
+        <environment name="uv" load="Blinky.uvprojx"/>
+      </project>
+      <attributes>
+        <component Cclass="CMSIS"     Cgroup="CORE"/>
+        <component Cclass="Device"    Cgroup="Startup"/>
+        <component Cclass="CMSIS"     Cgroup="RTOS2"/>
+      </attributes>
+    </example>
+    <example name="RTX5 Sine Wave" doc="Abstract.txt" folder="NXP/MCB1800/DSP_Sine_Wave_RTX5">
+      <description>Keil RTX5 based sine wave example</description>
+      <board name="MCB1800" vendor="Keil"/>
+      <project>
+        <environment name="uv" load="DSP_Sine_Wave.uvprojx"/>
+      </project>
+      <attributes>
+        <component Cclass="CMSIS"     Cgroup="CORE"/>
+        <component Cclass="Device"    Cgroup="Startup"/>
+        <component Cclass="CMSIS"     Cgroup="RTOS2"/>
+      </attributes>
+    </example>
+    <example name="RTX5 Power Demo" doc="Abstract.txt" folder="NXP/MCB1800/PowerDemo">
+      <description>Keil RTX5 based power measurement example for ULINKplus</description>
+      <board name="MCB1800" vendor="Keil"/>
+      <project>
+        <environment name="uv" load="PowerDemo.uvprojx"/>
+      </project>
+      <attributes>
+        <component Cclass="CMSIS"     Cgroup="CORE"/>
+        <component Cclass="Device"    Cgroup="Startup"/>
+        <component Cclass="CMSIS"     Cgroup="RTOS2"/>
+      </attributes>
+    </example>
+  </examples>
+</package>
